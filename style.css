@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(imagem/pexels-janko-ferlic-590493.jpg);
+    background-image: url(imagem/renderizando-um-fundo-futurista-abstrato-com-luzes-brilhantes-de-neon-azul-e-laranja.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -17,8 +17,8 @@ section {
     color: white;
     position: absolute;
     display: block;
-    background-color: rgba(95, 92, 133, 0.575);
-    box-shadow: 2px 2px 5px rgba(157, 143, 143, 0.505);
+    background-color: rgba(19, 16, 61, 0.575);
+    box-shadow: 2px 2px 5px rgba(16, 16, 29, 0.626);
     width: 70vw;
     height: 50vh;
     border-radius: 10px;
@@ -76,7 +76,7 @@ menu > ul#login{
 
 menu > ul > li {
     display: inline-block;
-    background-color: rgba(175, 173, 203, 0.21);
+    background-color: rgba(19, 16, 61, 0.575);
     border-radius: 5px;
     padding: 7px;
     box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.43);
