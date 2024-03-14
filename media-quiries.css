@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px ) and (max-width: 992px ) {
+
+
+    section > div > a {
+        margin-left: 220px;
+    }
+
+    menu#opcoes > ul {
+        margin-left:60px ;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    span#burguer {
+        display: none;
+    }
+
+   menu#opcoes{
+   display: block;
+   background-color: rgba(255, 255, 255, 0);
+   margin-top: 20px;
+   width:70vw;
+   height:40px;
+   border: 0px;
+   }
+
+   menu#opcoes > ul {
+    margin: 0px;
+    padding: 0px;
+   }
+
+   menu#opcoes > ul > li{
+    display: inline-block;
+    width: 150px;
+    padding: 7px;
+    margin-right: 10px;
+    top: 0px;
+    border: 0px;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.43);
+    background-color: rgba(19, 16, 61, 0.575);
+   }
+
+   section.animacao {
+    height: 50vh;
+   }
+
+   section > div > a {
+    background-color: white;
+    padding: 15px;
+    margin-left: 45%;
+    font-weight: bolder;
+}
+
+}

@@ -7,22 +7,37 @@
 }
 
 body {
-    background-image: url(imagem/renderizando-um-fundo-futurista-abstrato-com-luzes-brilhantes-de-neon-azul-e-laranja.jpg);
+    background-image: url(imagem/imagem-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     
 }
 
-section {
+.animacao {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+section.animacao {
     color: white;
     position: absolute;
     display: block;
     background-color: rgba(19, 16, 61, 0.575);
-    box-shadow: 2px 2px 5px rgba(16, 16, 29, 0.626);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.478);
     width: 70vw;
-    height: 50vh;
+    height: 70vh;
     border-radius: 10px;
-    top: 50%;
+    top: 55%;
     left: 50%;
 
     transform: translate(-50%, -50%);
@@ -38,13 +53,13 @@ section > p {
     text-align: justify;
     text-indent: 20px;
     padding: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 section > div > a {
     background-color: white;
     padding: 15px;
-    margin-left: 45%;
+    margin-left: 33%;
     border-radius: 20px;
     text-decoration: none;
     font-weight: bolder;
@@ -63,18 +78,59 @@ section > div:hover{
     transform: scale(1.10,1.10);
 }
 
-menu > ul {
+span {
+    display: none;
+    margin-top: 20px;
     margin-left: 20px;
+    background-color:rgba(19, 16, 61, 0.575);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
 }
 
-menu > ul#login{
+span:hover {
+    cursor: pointer;
+}
+
+menu#opcoes {
+    display: none;
+    position: fixed;
+    background-color: rgba(19, 16, 61, 0.851);
+    width: 90vw;
+    height: 80vh;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    z-index: 100;
+}
+
+menu#opcoes > ul {
+    list-style-type: none;
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+menu#login > ul{
+    display: block;
     position: absolute;
     right: 3%;
     top: 0%;
     
 }
 
-menu > ul > li {
+menu#opcoes > ul > li {
+    border-radius: 5px;
+    padding: 20px;
+    width: 70vw;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+
+
+menu#login > ul > li {
     display: inline-block;
     background-color: rgba(19, 16, 61, 0.575);
     border-radius: 5px;
